@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mocusma Club Voting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mocusma Club Voting</h1>
+    <form id="votingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="regNumber">Registration Number:</label>
+        <input type="text" id="regNumber"  required>
+        
+        <h2>Categories</h2>
+        
+        <h3>Chairperson</h3>
+        <div class="category" id="chairperson">
+            <label>
+                <input type="radio" name="chairperson" value="John Doe" required>
+                <img src="chairperson1.jpg" alt="John Doe">
+                John Doe
+            </label>
+            <label>
+                <input type="radio" name="chairperson" value="Jane Smith" required>
+                <img src="chairperson2.jpg" alt="Jane Smith">
+                Jane Smith
+            </label>
+        </div>
+
+        <h3>Vice Chairperson</h3>
+        <div class="category" id="viceChairperson">
+            <label>
+                <input type="radio" name="viceChairperson" value="Alice Johnson" required>
+                <img src="vicechair1.jpg" alt="Alice Johnson">
+                Alice Johnson
+            </label>
+            <label>
+                <input type="radio" name="viceChairperson" value="Bob Brown" required>
+                <img src="vicechair2.jpg" alt="Bob Brown">
+                Bob Brown
+            </label>
+        </div>
+
+        <h3>Cashier</h3>
+        <div class="category" id="cashier">
+            <label>
+                <input type="radio" name="cashier" value="Charlie Davis" required>
+                <img src="cashier1.jpg" alt="Charlie Davis">
+                Charlie Davis
+            </label>
+            <label>
+                <input type="radio" name="cashier" value="Diana Evans" required>
+                <img src="cashier2.jpg" alt="Diana Evans">
+                Diana Evans
+            </label>
+        </div>
+
+        <h3>Katibu</h3>
+        <div class="category" id="katibu">
+            <label>
+                <input type="radio" name="katibu" value="Eve Foster" required>
+                <img src="katibu1.jpg" alt="Eve Foster">
+                Eve Foster
+            </label>
+            <label>
+                <input type="radio" name="katibu" value="Frank Green" required>
+                <img src="katibu2.jpg" alt="Frank Green">
+                Frank Green
+            </label>
+        </div>
+
+        <h3>Secretary</h3>
+        <div class="category" id="secretary">
+            <label>
+                <input type="radio" name="secretary" value="Grace Hill" required>
+                <img src="secretary1.jpg" alt="Grace Hill">
+                Grace Hill
+            </label>
+            <label>
+                <input type="radio" name="secretary" value="Henry Ivy" required>
+                <img src="secretary2.jpg" alt="Henry Ivy">
+                Henry Ivy
+            </label>
+        </div>
+
+        <button type="submit">Vote</button>
+    </form>
+    
+    <p id="message"></p>
+    
+    <script src="script.js"></script>
+</body>
+</html>
